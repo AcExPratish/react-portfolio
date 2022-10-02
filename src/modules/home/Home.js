@@ -28,7 +28,7 @@ const Home = () => {
         <div className="grid-layout">
           <div className="left-container">
             <h1>Hi, I'm Pratish Joshi</h1>
-            <h1>Full Stack Developer</h1>
+            <h2>Full Stack Developer</h2>
           </div>
           <div className="right-container">
             <img src="./assets/portfolio.jpg" alt="portfolio image" />
