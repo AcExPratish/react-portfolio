@@ -3,6 +3,22 @@ section{
     height: 100vh;
 }
 
+h1{
+  font-size: 40px;  
+}
+
 .grid-container{
     display: grid;
+}
+
+@media only screen and (max-width: 1024px){
+    h1{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 20px;
+    }
 }

@@ -1,12 +1,12 @@
 import './App.css';
 import About from './modules/about/About';
 import Footer from './modules/footer/Footer';
-import Header from './modules/header/Header';
+import Home from './modules/home/Home';
 
 function App() {
   return (
     <>
-      {/* <Header/> */}
+      <Home/>
       <About/>
       <Footer/>
     </>

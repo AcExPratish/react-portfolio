@@ -1,0 +1,45 @@
+#home-section{
+    margin-bottom: 20px;
+}
+
+.grid-layout{
+    grid-template-columns: 50% 50%;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.left-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4%;
+    background-color: white;
+}
+
+.right-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-right: 4%;
+}
+
+img{
+width: 80%;
+background-repeat: no-repeat;
+border-radius: 50%;
+}
+
+.shadow{
+    margin-top: 20px;
+    width: 60%;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+    opacity: 0.4;
+    filter: blur(4px);
+}
