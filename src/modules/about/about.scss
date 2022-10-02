@@ -1,0 +1,77 @@
+#about-section {
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.grid-title {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.grid-content {
+  display: grid;
+  grid-template-columns: auto auto auto auto !important;
+  width: 80%;
+  min-height: 60vh;
+  align-items: center;
+  margin: 0 auto;
+  gap: 25px;
+  animation: fadein 0.8s;
+  overflow: hidden;
+}
+
+.grid-content > div:nth-child(odd) {
+  background: antiquewhite;
+}
+
+.grid-content > div:nth-child(even) {
+  margin-top: 10px;
+  background: turquoise;
+}
+
+.content-box {
+  width: 100%;
+  min-height: 15vh;
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0px 2px;
+  background: #32557f;
+  display: inline-block;
+  color: #fff;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.radio {
+  display: none;
+}
+
+#one:checked ~ .panels #one-panel,
+#two:checked ~ .panels #two-panel,
+#three:checked ~ .panels #three-panel,
+#four:checked ~ .panels #four-panel {
+  display: block;
+}
+
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab,
+#four:checked ~ .tabs #four-tab {
+  background: #fff;
+  color: #000;
+  border-top: 3px solid #32557f;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
