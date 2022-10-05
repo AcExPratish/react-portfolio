@@ -1,13 +1,27 @@
 import React, { useState } from "react";
 import "./project.scss";
 
-const About = () => {
-  const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+const Project = () => {
+  const data = [
+    "/assets/portfolio.jpg",
+    "/assets/portfolio.jpg",
+    "/assets/portfolio.jpg",
+    "/assets/portfolio.jpg",
+    "/assets/portfolio.jpg",
+    "/assets/portfolio.jpg",
+    "/assets/portfolio.jpg",
+    "/assets/portfolio.jpg",
+    "/assets/portfolio.jpg",
+    "/assets/portfolio.jpg",
+    "/assets/portfolio.jpg",
+    "/assets/portfolio.jpg",
+  ];
   const inputData = [
     {
       id: "one",
       value: 1,
       description: "All",
+      checked: true,
     },
     {
       id: "two",
@@ -30,12 +44,12 @@ const About = () => {
     setDefaultInput(e.target.value);
   };
   return (
-    <section id="about-section">
+    <div id="project-section">
       <div className="grid-container">
-      <div className="grid-title about-title about-title-font">
-        Projects
-        <hr/>  
-      </div>
+        <div className="grid-title uppercase title-font">
+          Projects
+          <hr />
+        </div>
         <div className="grid-title">
           {inputData.map((data, key) => (
             <input
@@ -67,14 +81,14 @@ const About = () => {
           <div className="grid-content">
             {data.map((data, key) => (
               <div className="content-box" key={key}>
-                {data} <br />
+                <img src={data} className="img" />
               </div>
             ))}
           </div>
         ) : null}
       </div>
-    </section>
+    </div>
   );
 };
 
-export default About;
+export default Project;

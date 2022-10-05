@@ -3,19 +3,19 @@ import "./home.scss";
 
 const Home = () => {
   return (
-    <section id="home-section">
+    <div id="home-section">
       <div className="grid-container">
         <nav>
           <span>Pratish</span>
           <ul>
-            <li>
+          <li>
               <a href="#home-section">Home</a>
             </li>
             <li>
-              <a href="#about-section">About</a>
+              <a href="#project-section">Projects</a>
             </li>
             <li>
-              <a href="#portfolio-section">Portfolio</a>
+              <a href="#blog-section">Blogs</a>
             </li>
             <li>
               <a href="#contact-section">Contact</a>
@@ -31,12 +31,12 @@ const Home = () => {
             <h2>Full Stack Developer</h2>
           </div>
           <div className="right-container">
-            <img src="./assets/portfolio.jpg" alt="portfolio image" />
+            <img src="./assets/portfolio.jpg" alt="portfolio image" className="img" />
             <div className="shadow"></div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
