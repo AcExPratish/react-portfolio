@@ -6,52 +6,99 @@
     justify-content: space-between;
     width: 100%;
   }
-  
+
+  .btn {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-top: 10px;
+    outline: none;
+    padding: 8px 6px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+      transform 0.1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: auto;
+  }
+
+  .btn:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow 0.2s;
+  }
+
+  .btn:active {
+    background-color: #f7f7f7;
+    border-color: #000000;
+    transform: scale(0.96);
+  }
+
+  .btn:disabled {
+    border-color: #dddddd;
+    color: #dddddd;
+    cursor: not-allowed;
+    opacity: 1;
+  }
+
   nav > span {
     margin: 0 4%;
+    font-family: "Dancing Script";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50px;
+    color: #000000;
   }
-  
+
   ul {
     list-style-type: none;
     margin: 0 4%;
   }
-  
+
   a {
     text-decoration: none;
     color: black;
     transition: ease-in 0.2s;
   }
-  
+
   a:hover {
     color: black;
     font-size: 24px;
     transition: ease-in 0.2s;
   }
-  
+
   li {
     padding: 0 2rem;
     display: inline-block;
   }
-  
+
   .grid-layout {
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 10px;
     overflow: hidden;
   }
-  
+
   .left-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     margin-left: 4%;
     background-color: white;
   }
-  
+
   .left-container > h1 {
-    margin: 0 auto;
     text-align: center;
     overflow: hidden;
     border-right: 0.15em solid orange;
@@ -59,7 +106,7 @@
     letter-spacing: 0.1em;
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
   }
-  
+
   .right-container {
     display: flex;
     flex-direction: column;
@@ -69,15 +116,15 @@
     height: 100vh;
     margin-right: 4%;
   }
-  
+
   .img {
     width: 80%;
     background-repeat: no-repeat;
     border-radius: 50%;
     background-position: center;
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
   }
-  
+
   .shadow {
     margin-top: 20px;
     width: 60%;
@@ -87,7 +134,7 @@
     opacity: 0.4;
     filter: blur(4px);
   }
-  
+
   @keyframes typing {
     from {
       width: 0;
@@ -96,7 +143,7 @@
       width: 100%;
     }
   }
-  
+
   @keyframes blink-caret {
     from,
     to {
@@ -106,8 +153,8 @@
       border-color: orange;
     }
   }
-  
-  @media only screen and (max-width: 972px) {
+
+  @media only screen and (max-width: 600px) {
     li {
       padding: 0 0.8rem;
       font-size: 14px;

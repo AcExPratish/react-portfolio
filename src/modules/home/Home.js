@@ -6,7 +6,7 @@ const Home = () => {
     <div id="home-section">
       <div className="grid-container">
         <nav>
-          <span>Pratish</span>
+          <span className="signature">Pratish</span>
           <ul>
           <li>
               <a href="#home-section">Home</a>
@@ -27,8 +27,9 @@ const Home = () => {
         </nav>
         <div className="grid-layout">
           <div className="left-container">
-            <h1>Hi, I'm Pratish Joshi</h1>
+            <h1>Hello, i'm Pratish Joshi</h1>
             <h2>Full Stack Developer</h2>
+            <button class="btn" role="button">View my Work</button>
           </div>
           <div className="right-container">
             <img src="./assets/portfolio.jpg" alt="portfolio image" className="img" />

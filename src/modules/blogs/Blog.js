@@ -20,7 +20,7 @@ const Blog = () => {
             <div className="content-box" key={key}>
               <img src={data} className="img" />
               <div className="grid-container">
-                <div className="category-name">Web Design/ Mobile</div>
+                <div className="category-name">Web Design</div>
                 <div className="publish-date">14th November</div>
               </div>
               <div className="content-title">Let's ace it</div>
