@@ -1,5 +1,6 @@
 import React from "react";
 import "./home.scss";
+import {BsFillArrowRightCircleFill} from 'react-icons/bs'
 
 const Home = () => {
   return (
@@ -29,7 +30,7 @@ const Home = () => {
           <div className="left-container">
             <h1>Hello, i'm Pratish Joshi</h1>
             <h2>Full Stack Developer</h2>
-            <button class="btn" role="button">View my Work</button>
+            <button class="btn" role="button">View my Work <BsFillArrowRightCircleFill/></button>
           </div>
           <div className="right-container">
             <img src="./assets/portfolio.jpg" alt="portfolio image" className="img" />
