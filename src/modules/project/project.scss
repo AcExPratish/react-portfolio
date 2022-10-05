@@ -1,6 +1,27 @@
 #about-section {
   background-color: #fff;
   margin-bottom: 20px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+}
+
+.about-title-font{
+  font-size: 42px;
+  line-height: 51px;
+}
+
+hr{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5%;
+  height: 4px;
+  background-color: #171717;
+}
+
+.about-tab-font{
+font-size: 16px;
+line-height: 20px;
 }
 
 //grid styles
@@ -34,6 +55,11 @@
   background: turquoise;
 }
 
+.about-title{
+  color: #171717;
+text-transform: uppercase;
+}
+
 //input styles
 .radio {
   display: none;
@@ -43,10 +69,10 @@
   cursor: pointer;
   padding: 10px 20px;
   margin: 0px 2px;
-  background: #32557f;
   display: inline-block;
-  color: #fff;
+  color: #000;
   border-radius: 3px 3px 0px 0px;
+  text-transform: uppercase;
 }
 
 #one:checked ~ .panels #one-panel,
@@ -60,9 +86,8 @@
 #two:checked ~ .tabs #two-tab,
 #three:checked ~ .tabs #three-tab,
 #four:checked ~ .tabs #four-tab {
-  background: #fff;
-  color: #000;
-  border-top: 3px solid #32557f;
+  background-color: #171717;
+  color: #D4D4D4;
 }
 
 //content box styles

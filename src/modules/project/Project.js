@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./about.scss";
+import "./project.scss";
 
 const About = () => {
   const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
@@ -32,6 +32,10 @@ const About = () => {
   return (
     <section id="about-section">
       <div className="grid-container">
+      <div className="grid-title about-title about-title-font">
+        Projects
+        <hr/>  
+      </div>
         <div className="grid-title">
           {inputData.map((data, key) => (
             <input
@@ -44,11 +48,7 @@ const About = () => {
               type="radio"
             />
           ))}
-
-          {/* <div className="tabs">
-          {inputData.map((data, key) => <label className="tab" id={data.id+'tab'} htmlFor={data.id}>{data.description}</label>)}
-        </div> */}
-          <div className="tabs">
+          <div className="tabs about-tab-font">
             <label className="tab" id="one-tab" htmlFor="one">
               All
             </label>
