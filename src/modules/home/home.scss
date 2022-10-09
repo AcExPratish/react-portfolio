@@ -51,9 +51,6 @@
 
   nav > span {
     margin: 0 4%;
-    font-family: "Dancing Script";
-    font-style: normal;
-    font-weight: 500;
     font-size: 42px;
     line-height: 50px;
     color: #000000;
@@ -137,10 +134,10 @@
 
   @keyframes typing {
     from {
-      width: 0;
+      width: 0%;
     }
     to {
-      width: 100%;
+      width: 60%;
     }
   }
 
