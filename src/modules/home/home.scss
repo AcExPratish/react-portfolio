@@ -7,6 +7,15 @@
     width: 100%;
   }
 
+  #navbar-sm {
+    display: none;
+  }
+
+  button {
+    display: flex !important;
+    align-items: center !important;
+  }
+
   .btn {
     background-color: #ffffff;
     border: 1px solid #000000;
@@ -29,6 +38,10 @@
     user-select: none;
     -webkit-user-select: none;
     width: auto;
+    .icon {
+      transition: ease-in 0.5s;
+      margin-left: 5px;
+    }
   }
 
   .btn:focus-visible {
@@ -36,10 +49,14 @@
     transition: box-shadow 0.2s;
   }
 
-  .btn:active {
+  .btn:hover {
     background-color: #f7f7f7;
     border-color: #000000;
     transform: scale(0.96);
+    .icon {
+      transform: rotate(90deg);
+      transition: ease-in 0.5s;
+    }
   }
 
   .btn:disabled {
@@ -70,6 +87,7 @@
   a:hover {
     color: black;
     font-size: 24px;
+    color: #fdb750;
     transition: ease-in 0.2s;
   }
 
@@ -156,6 +174,38 @@
       padding: 0 0.8rem;
       font-size: 14px;
       display: inline-block;
+    }
+
+    .grid-layout {
+      grid-template-columns: 100%;
+    }
+
+    .left-container {
+      align-items: center;
+      margin: 10% auto 0 auto;
+    }
+
+    .right-container {
+      margin: 10% auto 0 auto;
+      justify-content: start;
+      height: 60vh;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    #navbar-lg {
+      display: none;
+    }
+
+    #navbar-sm {
+      font-size: 2rem;
+      display: block;
+      transition: ease-in-out 0.2s;
+    }
+
+    #navbar-sm:hover {
+      color: #fdb750;
+      transition: ease-in-out 0.2s;
     }
   }
 }

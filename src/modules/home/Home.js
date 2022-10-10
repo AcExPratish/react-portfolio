@@ -1,6 +1,7 @@
 import React from "react";
 import "./home.scss";
-import {BsFillArrowRightCircleFill} from 'react-icons/bs'
+import { BsFillArrowRightCircleFill } from 'react-icons/bs'
+import { AiOutlineAlignRight } from 'react-icons/ai'
 
 const Home = () => {
   return (
@@ -8,8 +9,8 @@ const Home = () => {
       <div className="grid-container">
         <nav>
           <span className="signature">Pratish</span>
-          <ul>
-          <li>
+          <ul id="navbar-lg">
+            <li>
               <a href="#home-section">Home</a>
             </li>
             <li>
@@ -25,12 +26,15 @@ const Home = () => {
               <a href="#footer-section">Footer</a>
             </li>
           </ul>
+          <ul id="navbar-sm">
+            <AiOutlineAlignRight />
+          </ul>
         </nav>
         <div className="grid-layout">
           <div className="left-container">
             <h1>Hello, i'm Pratish Joshi</h1>
             <h2>Full Stack Developer</h2>
-            <button class="btn" role="button">View my Work <BsFillArrowRightCircleFill/></button>
+            <button class="btn" role="button">View my Work <BsFillArrowRightCircleFill className='icon' /></button>
           </div>
           <div className="right-container">
             <img src="./assets/portfolio.jpg" alt="portfolio image" className="img" />
