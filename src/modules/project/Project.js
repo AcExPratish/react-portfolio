@@ -3,18 +3,18 @@ import "./project.scss";
 
 const Project = () => {
   const data = [
-    "/assets/portfolio.jpg",
-    "/assets/portfolio.jpg",
-    "/assets/portfolio.jpg",
-    "/assets/portfolio.jpg",
-    "/assets/portfolio.jpg",
-    "/assets/portfolio.jpg",
-    "/assets/portfolio.jpg",
-    "/assets/portfolio.jpg",
-    "/assets/portfolio.jpg",
-    "/assets/portfolio.jpg",
-    "/assets/portfolio.jpg",
-    "/assets/portfolio.jpg",
+    "project-1.png",
+    "project-2.png",
+    "project-3.png",
+    "project-4.png",
+    "project-5.png",
+    "project-6.png",
+    "project-7.png",
+    "project-8.png",
+    "project-9.png",
+    "project-10.png",
+    "project-11.png",
+    "project-12.png",
   ];
   const inputData = [
     {
@@ -81,7 +81,7 @@ const Project = () => {
           <div className="grid-content">
             {data.map((data, key) => (
               <div className="content-box" key={key}>
-                <img src={data} className="img" />
+                <img src={`/assets/projects/${data}`} className="img" alt="project-images" title="this is my project" />
               </div>
             ))}
           </div>
