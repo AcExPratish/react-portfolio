@@ -9,7 +9,7 @@ const Blog = () => {
     "/assets/blog.jpg",
   ];
   return (
-    <div id="blog-section">
+    <div id="blog">
       <div className="grid-container">
         <div className="grid-title uppercase title-font">
           Blogs
@@ -25,7 +25,7 @@ const Blog = () => {
               </div>
               <div className="content-title">Let's ace it</div>
               <p className="short-description">
-              If you are going to use a passage of Lorem Ipsum you need to be sure.
+                If you are going to use a passage of Lorem Ipsum you need to be sure.
               </p>
             </div>
           ))}

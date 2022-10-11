@@ -1,4 +1,4 @@
-#project-section {
+#project {
   background-color: #fff;
   margin-bottom: 4%;
   font-weight: 500;
@@ -11,12 +11,17 @@
     background-repeat: no-repeat;
   }
 
+  label:hover {
+    color: #fdb750;
+    transition: ease-in-out 0.2s;
+    animation: alternate-reverse 1;
+  }
+
   .about-tab-font {
     font-size: 16px;
     line-height: 20px;
   }
 
-  //grid styles
   .grid-content {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -30,10 +35,9 @@
   }
 
   .grid-content > div:nth-child(even) {
-    margin-top: 20px;
+    margin-top: 30%;
   }
 
-  //input styles
   .radio {
     display: none;
   }
@@ -62,14 +66,11 @@
     color: #d4d4d4;
   }
 
-  //media query
   @media only screen and (max-width: 600px) {
     .grid-content {
       grid-template-columns: auto auto;
     }
-    .grid-content > div:nth-child(even) {
-      margin-top: 0px;
-    }
+
     .about-tab-font {
       font-size: 12px;
     }

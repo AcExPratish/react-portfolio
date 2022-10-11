@@ -44,7 +44,7 @@ const Project = () => {
     setDefaultInput(e.target.value);
   };
   return (
-    <div id="project-section">
+    <div id="project">
       <div className="grid-container">
         <div className="grid-title uppercase title-font">
           Projects

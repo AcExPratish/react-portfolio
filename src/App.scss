@@ -1,0 +1,128 @@
+h1 {
+  font-size: 40px;
+}
+
+.grid-title {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+
+.grid-container {
+  display: grid;
+}
+
+.title-font {
+  font-size: 42px;
+  line-height: 51px;
+}
+
+hr {
+  width: 40%;
+  margin: 0 auto;
+  height: 4px;
+  background-color: #171717;
+}
+
+button {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.btn {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 10px;
+  outline: none;
+  padding: 8px 6px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow 0.2s, -ms-transform 0.1s, -webkit-transform 0.1s,
+    transform 0.1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+  .icon {
+    transition: ease-in 0.5s;
+    margin-left: 5px;
+  }
+}
+
+.btn:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow 0.2s;
+}
+
+.btn:hover {
+  background-color: #f7f7f7;
+  border-color: #000000;
+  transform: scale(0.96);
+  .icon {
+    transform: rotate(90deg);
+    transition: ease-in 0.5s;
+  }
+}
+
+.btn:disabled {
+  border-color: #dddddd;
+  color: #dddddd;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+.uppercase {
+  color: #171717;
+  text-transform: uppercase;
+}
+
+.content-box {
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: ease-in 0.2s;
+}
+
+a:hover {
+  color: black;
+  font-size: 24px;
+  color: #fdb750;
+  transition: ease-in 0.2s;
+}
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 20px;
+  }
+}
