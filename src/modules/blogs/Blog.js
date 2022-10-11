@@ -3,10 +3,10 @@ import "./blog.scss";
 
 const Blog = () => {
   const data = [
-    "/assets/blog.jpg",
-    "/assets/blog.jpg",
-    "/assets/blog.jpg",
-    "/assets/blog.jpg",
+    "/assets/projects/project-1.png",
+    "/assets/projects/project-2.png",
+    "/assets/projects/project-3.png",
+    "/assets/projects/project-4.png",
   ];
   return (
     <div id="blog">
