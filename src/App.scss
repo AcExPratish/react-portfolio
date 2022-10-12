@@ -1,3 +1,10 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  cursor: url("../public/assets/cursor.cur"), auto;
+}
+
 h1 {
   font-size: 40px;
 }
