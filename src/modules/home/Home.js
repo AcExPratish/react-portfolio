@@ -30,13 +30,12 @@ const Home = () => {
         </nav>
         <div className="grid-layout">
           <div className="left-container">
-            <h1>Hello, i'm Pratish Joshi</h1>
+            <h1>Pratish Joshi</h1>
             <h2>Full Stack Developer</h2>
-            <br />
             <Button title='View my work' icon={<BsFillArrowRightCircleFill className='icon' />} />
           </div>
           <div className="right-container">
-            <img src="./assets/portfolio.jpg" alt="portfolio image" className="img" />
+            <img src="./assets/portfolio.png" alt="portfolio image" className="img" />
             <div className="shadow"></div>
           </div>
         </div>
