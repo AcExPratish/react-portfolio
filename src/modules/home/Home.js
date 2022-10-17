@@ -5,6 +5,17 @@ import { AiOutlineAlignRight } from 'react-icons/ai'
 import Button from "../../reusables/Button";
 
 const Home = () => {
+  const onClickOpenListener = () => {
+    const element = document.getElementById('navbar-open-state')
+    element.classList.remove('d-none')
+    element.classList.add('d-flex')
+  }
+
+  const onClickCloseListener = () => {
+    const element = document.getElementById('navbar-open-state')
+    element.classList.remove('d-flex')
+    element.classList.add('d-none')
+  }
   return (
     <div id="home">
       <div className="grid-container">
@@ -24,9 +35,30 @@ const Home = () => {
               <a href="#contact">Contact</a>
             </li>
           </ul>
-          <ul id="navbar-sm">
-            <AiOutlineAlignRight />
-          </ul>
+          <div id="navbar-sm">
+            <div id="navbar-icon">
+              <AiOutlineAlignRight onClick={onClickOpenListener} />
+            </div>
+          </div>
+          <div id="navbar-open-state" className="d-none">
+            <ul>
+              <li onClick={onClickCloseListener}>
+                <a href="#home">Home</a>
+              </li>
+              <li onClick={onClickCloseListener}>
+                <a href="#project">Projects</a>
+              </li>
+              <li onClick={onClickCloseListener}>
+                <a href="#blog">Blogs</a>
+              </li>
+              <li onClick={onClickCloseListener}>
+                <a href="#contact">Contact</a>
+              </li>
+              <li onClick={onClickCloseListener}>
+                <a href="#close">Close</a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <div className="grid-layout">
           <div className="left-container">
