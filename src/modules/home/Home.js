@@ -40,7 +40,7 @@ const Home = () => {
               <AiOutlineAlignRight onClick={onClickOpenListener} />
             </div>
           </div>
-          <div id="navbar-open-state" className="d-none">
+          <div id="navbar-open-state" className="d-none" onClick={onClickCloseListener}>
             <ul>
               <li onClick={onClickCloseListener}>
                 <a href="#home">Home</a>
@@ -54,9 +54,9 @@ const Home = () => {
               <li onClick={onClickCloseListener}>
                 <a href="#contact">Contact</a>
               </li>
-              <li onClick={onClickCloseListener}>
+              {/* <li onClick={onClickCloseListener}>
                 <a href="#close">Close</a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>
