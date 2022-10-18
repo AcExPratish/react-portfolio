@@ -170,9 +170,19 @@
       overflow: hidden;
       width: 100%;
       z-index: 99999;
-      height: 100vh;
       background-color: #000000;
       opacity: 0.8;
+      height: 0vh;
+      animation: identifier 1s forwards;
+    }
+
+    @keyframes identifier {
+      from {
+        height: 0vh;
+      }
+      to {
+        height: 100vh;
+      }
     }
 
     #navbar-open-state > ul > li {

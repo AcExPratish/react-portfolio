@@ -35,7 +35,7 @@ const Home = () => {
               <a href="#contact">Contact</a>
             </li>
           </ul>
-          <div id="navbar-sm">
+          <div id="navbar-sm" className="d-none">
             <div id="navbar-icon">
               <AiOutlineAlignRight onClick={onClickOpenListener} />
             </div>
