@@ -1,13 +1,15 @@
 import './App.scss';
 import Project from './modules/project/Project';
-import Home from './modules/home/Home';
+import Navbar from './modules/navbar/Navbar';
 import Blog from './modules/blogs/Blog';
 import Contact from './modules/contact/Contact';
+import Home from './modules/home/Home';
 
 function App() {
   return (
     <>
-      <Home />
+      <Navbar />
+      <Home/>
       <Project />
       <Blog />
       <Contact />

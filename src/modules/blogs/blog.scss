@@ -3,6 +3,10 @@
   font-weight: 500;
 
   //grid styles
+  .grid-container {
+    display: grid;
+  }
+
   .grid-content {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -14,6 +18,7 @@
     animation: fadeIn 0.8s;
     overflow: hidden;
   }
+
   .content-box {
     display: block;
     width: 100%;
@@ -39,6 +44,7 @@
         line-height: 17px;
         color: #1e73be;
       }
+
       .publish-date {
         margin-top: 5px;
         color: #a6a6a6;
@@ -46,6 +52,7 @@
         line-height: 15px;
       }
     }
+
     .content-title {
       margin-top: 5px;
       font-weight: 600;
