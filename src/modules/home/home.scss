@@ -1,4 +1,6 @@
 #home {
+    margin-top: 10px;
+
     a {
         text-decoration: none;
         color: black;
@@ -25,7 +27,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: start;
+        align-items: flex-start;
         justify-content: center;
         background-color: white;
     }
@@ -89,6 +91,12 @@
     }
 
     @media only screen and (max-width: 600px) {
+        li {
+            padding: 0 0.8rem;
+            font-size: 14px;
+            display: inline-block;
+        }
+
         .grid-layout {
             grid-template-columns: 100%;
         }
@@ -102,6 +110,75 @@
             margin: 10% auto 0 auto;
             justify-content: start;
             height: 60vh;
+        }
+    }
+
+    @media only screen and (max-width: 1024px) {
+        #navbar-lg {
+            display: none;
+        }
+
+        #navbar-sm {
+            list-style-type: none;
+            margin: 0 4%;
+            width: 100%;
+            font-size: 2rem;
+            display: block;
+            transition: ease-in-out 0.2s;
+        }
+
+        #navbar-open-state {
+            position: fixed;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+            width: 100%;
+            z-index: 99999;
+            background-color: #000000;
+            opacity: 0.8;
+            height: 0vh;
+            animation: identifier 1s forwards;
+        }
+
+        @keyframes identifier {
+            from {
+                height: 0vh;
+            }
+
+            to {
+                height: 100vh;
+            }
+        }
+
+        #navbar-open-state>ul>li {
+            padding: 0;
+            margin: 2rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #navbar-open-state>ul>li>a {
+            z-index: 9999999;
+            color: white;
+            transition: ease-in-out 0.2s;
+        }
+
+        #navbar-open-state>ul>li>a:hover {
+            z-index: 9999999;
+            color: #fdb750;
+            transition: ease-in-out 0.2s;
+        }
+
+        #navbar-sm:hover {
+            color: #fdb750;
+            transition: ease-in-out 0.2s;
+        }
+
+        #navbar-icon {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
         }
     }
 }

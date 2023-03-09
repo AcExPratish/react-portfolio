@@ -4,6 +4,7 @@
   position: sticky;
   top: 0;
   background-color: #ffffff;
+
   nav {
     display: flex;
     padding-top: 1%;
@@ -26,7 +27,7 @@
     display: none;
   }
 
-  nav > span {
+  nav>span {
     margin: 0 4%;
     font-size: 42px;
     line-height: 50px;
@@ -95,12 +96,13 @@
       from {
         height: 0vh;
       }
+
       to {
         height: 100vh;
       }
     }
 
-    #navbar-open-state > ul > li {
+    #navbar-open-state>ul>li {
       padding: 0;
       margin: 2rem auto;
       display: flex;
@@ -108,13 +110,13 @@
       justify-content: center;
     }
 
-    #navbar-open-state > ul > li > a {
+    #navbar-open-state>ul>li>a {
       z-index: 9999999;
       color: white;
       transition: ease-in-out 0.2s;
     }
 
-    #navbar-open-state > ul > li > a:hover {
+    #navbar-open-state>ul>li>a:hover {
       z-index: 9999999;
       color: #fdb750;
       transition: ease-in-out 0.2s;
@@ -128,7 +130,7 @@
     #navbar-icon {
       width: 100%;
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
     }
   }
 }
