@@ -56,99 +56,11 @@
     display: inline-block;
   }
 
-  .grid-layout {
-    display: grid;
-    width: 92%;
-    grid-template-columns: 50% 50%;
-    gap: 10px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  .left-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    background-color: white;
-  }
-
-  .left-container > h2 {
-    text-align: center;
-    overflow: hidden;
-    border-right: 0.15em solid orange;
-    white-space: nowrap;
-    letter-spacing: 0.1em;
-    animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
-  }
-
-  .right-container {
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  .img {
-    width: 60%;
-    background-repeat: no-repeat;
-    border-radius: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .shadow {
-    margin-top: 20px;
-    width: 40%;
-    height: 20px;
-    border-radius: 100%;
-    background-color: black;
-    opacity: 0.2;
-    filter: blur(4px);
-  }
-
-  @keyframes typing {
-    from {
-      width: 0%;
-    }
-    to {
-      width: 20%;
-    }
-  }
-
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: orange;
-    }
-  }
-
   @media only screen and (max-width: 600px) {
     li {
       padding: 0 0.8rem;
       font-size: 14px;
       display: inline-block;
-    }
-
-    .grid-layout {
-      grid-template-columns: 100%;
-    }
-
-    .left-container {
-      align-items: center;
-      margin: 10% auto 0 auto;
-    }
-
-    .right-container {
-      margin: 10% auto 0 auto;
-      justify-content: start;
-      height: 60vh;
     }
   }
 

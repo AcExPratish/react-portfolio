@@ -17,7 +17,7 @@ const Blog = () => {
       <div className="grid-content">
         {data.map((data, key) => (
           <div className="content-box" key={key}>
-            <img src={data} className="img" />
+            <img src={data} alt="blog_image" className="img" />
             <div className="grid-container">
               <div className="category-name">Web Design</div>
               <div className="publish-date">14th November</div>

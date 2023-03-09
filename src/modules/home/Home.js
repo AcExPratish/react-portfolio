@@ -13,7 +13,7 @@ const Home = () => {
                     <Button title='View my work' icon={<BsFillArrowRightCircleFill className='icon' />} />
                 </div>
                 <div className="right-container">
-                    <img src="./assets/portfolio.png" alt="portfolio image" className="img" />
+                    <img src="./assets/portfolio.png" alt="portfolio_image" className="img" />
                     <div className="shadow"></div>
                 </div>
             </div>
