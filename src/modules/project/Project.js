@@ -39,7 +39,7 @@ const Project = () => {
       description: "Android Studio",
     },
   ];
-  const [defaultInput, setDefaultInput] = useState(1);
+  const [defaultInput, setDefaultInput] = useState('1');
   const onChangeInputHandler = (e) => {
     setDefaultInput(e.target.value);
   };
@@ -76,7 +76,7 @@ const Project = () => {
           </label>
         </div>
       </div>
-      {defaultInput == 1 ? (
+      {defaultInput === '1' ? (
         <div className="grid-content">
           {data.map((data, key) => (
             <div className="content-box" key={key}>
