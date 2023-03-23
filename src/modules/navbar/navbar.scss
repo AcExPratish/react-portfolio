@@ -3,6 +3,7 @@
   margin-bottom: 20px;
   position: sticky;
   top: 0;
+  height: 5vh;
   background-color: #ffffff;
 
   nav {
@@ -27,7 +28,7 @@
     display: none;
   }
 
-  nav>span {
+  nav > span {
     margin: 0 4%;
     font-size: 42px;
     line-height: 50px;
@@ -102,7 +103,7 @@
       }
     }
 
-    #navbar-open-state>ul>li {
+    #navbar-open-state > ul > li {
       padding: 0;
       margin: 2rem auto;
       display: flex;
@@ -110,13 +111,13 @@
       justify-content: center;
     }
 
-    #navbar-open-state>ul>li>a {
+    #navbar-open-state > ul > li > a {
       z-index: 9999999;
       color: white;
       transition: ease-in-out 0.2s;
     }
 
-    #navbar-open-state>ul>li>a:hover {
+    #navbar-open-state > ul > li > a:hover {
       z-index: 9999999;
       color: #fdb750;
       transition: ease-in-out 0.2s;

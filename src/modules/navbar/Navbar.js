@@ -1,19 +1,19 @@
 import React from "react";
 import "./navbar.scss";
-import { AiOutlineAlignRight } from 'react-icons/ai'
+import { AiOutlineAlignRight } from "react-icons/ai";
 
 const Navbar = () => {
   const onClickOpenListener = () => {
-    const element = document.getElementById('navbar-open-state')
-    element.classList.remove('d-none')
-    element.classList.add('d-flex')
-  }
+    const element = document.getElementById("navbar-open-state");
+    element.classList.remove("d-none");
+    element.classList.add("d-flex");
+  };
 
   const onClickCloseListener = () => {
-    const element = document.getElementById('navbar-open-state')
-    element.classList.remove('d-flex')
-    element.classList.add('d-none')
-  }
+    const element = document.getElementById("navbar-open-state");
+    element.classList.remove("d-flex");
+    element.classList.add("d-none");
+  };
 
   return (
     <div id="navbar">
@@ -38,7 +38,11 @@ const Navbar = () => {
             <AiOutlineAlignRight onClick={onClickOpenListener} />
           </div>
         </div>
-        <div id="navbar-open-state" className="d-none" onClick={onClickCloseListener}>
+        <div
+          id="navbar-open-state"
+          className="d-none"
+          onClick={onClickCloseListener}
+        >
           <ul>
             <li onClick={onClickCloseListener}>
               <a href="#home">Home</a>
